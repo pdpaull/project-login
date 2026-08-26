@@ -81,7 +81,7 @@ main{
     width: calc(100% - 49.6px);
     border: 0px;
     background-color: #ffffff;
-    color: white;
+    color: black;
     transform: translateY(-9px);
 }
 #ilogin{
