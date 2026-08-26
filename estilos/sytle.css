@@ -1,0 +1,48 @@
+@charset"UTF-8" ;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor0:#A60321;
+    --cor1:#590219;
+    --cor2:#A66F8D;
+    --cor3:#8FB6BF;
+    --cor4:#E9F0F2;
+
+}
+html , body{
+    background-color: var(--cor1);
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--cor4);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+#imagem{
+    display: block;
+    background: var(--cor1) url(../imagens/pexels-dylan-leagh-86004871-8954100.webp) no-repeat bottom left;
+    height: 200px;
+    background-size: cover;
+}
+#formulario{
+    padding: 10px;
+}
