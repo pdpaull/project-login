@@ -29,16 +29,17 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    
     background-color: var(--cor4);
     width: 250px;
-    height: 520px;
+    height: 550px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transition: width .5s,height .5s;
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);
 }
 #imagem{
     display: block;
@@ -55,26 +56,36 @@ main{
 }
 #formulario>p{
     font-size: 0.8em;
+    margin-bottom: 16px;
 }
 .campo{
     background-color: var(--cor1);
     height: 40px;
     border-radius: 5px;
-    margin: 5px auto;
+    margin: 10px auto;
     width: 90%;
     
 }
 .campo>span{
     color: var(--cor4);
     padding: 5px;
-    font-size: 1.8em;
+    font-size: 2em;
+    width: 40px;
 }
 .campo>input{
-    font-size: .8em;
-    height: 100%;
-    border-radius: 5px;
+    font-size: 1em;
+    height: 80%;
+    border-radius: 8px;
     padding: 4px;
-    width: calc(100% - 44px);
+    
+    width: calc(100% - 49.6px);
+    border: 0px;
+    background-color: #ffffff;
+    color: white;
+    transform: translateY(-9px);
+}
+#ilogin{
+    transform: translateY(-10px);
 }
 label{
     display: none;
@@ -122,6 +133,12 @@ input[type=submit]:hover{
     }
     #login{
         width: 80vw;
+        height: 450px;
+        
+    }
+    #login p{
+        margin-bottom: 20px ;
+        font-size: 1em;
     }
     #imagem{
         float: left;
@@ -132,6 +149,21 @@ input[type=submit]:hover{
     #formulario{
         float: right;
         width: 70%;
+    }
+    .campo{
+        margin-bottom: 60px;
+    }
+    #campo1::after{
+        display: block;
+        content: "Adicione por favor o seu endereço email. \A exemplo: *****@gmail.com";
+        white-space: pre-wrap;
+        text-align: center;
+    }
+    #campo2::after{
+        display: block;
+        content: "Entrei aqui com a senha do seu endereço email com 8 ou mais carater";
+        text-align: center;
+
     }
     .campo>span{
     color: var(--cor4);
@@ -162,6 +194,24 @@ input[type=submit]:hover{
     }
     #formulario>p{
     font-size: 1.2em;
+    }
+    .campo{
+        margin-bottom: 60px;
+    }
+    #campo1::after{
+        display: block;
+        content: "Adicione por favor o seu endereço email. \A *****@gmail.com";
+        white-space: pre-wrap;
+        text-align: center;
+    }
+    #campo2::after{
+        display: block;
+        content: "Entrei aqui com a senha do seu endereço email com 8 ou mais carater";
+        text-align: center;
+
+    }
+    input[type=submit]{
+        margin-bottom: 40px;
     }
     .campo>span{
     color: var(--cor4);
